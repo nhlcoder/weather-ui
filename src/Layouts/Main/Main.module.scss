@@ -1,0 +1,14 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    min-height: 1000px;
+}
+.navbar{
+    background-color: #fff;
+    color: blueviolet;
+    padding: 20px;
+}
+.content{
+    background-color: #ccc;
+    padding: 20px;
+}
