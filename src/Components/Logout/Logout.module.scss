@@ -1,0 +1,11 @@
+.logout {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.icon {
+    width: 100%;
+    height: calc(var(--width-height-icon) / 2);
+    // color: var(--color-btn-logout);
+}

@@ -1,30 +1,50 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { publicRoutes } from './Routes';
+
+import { privateRoutes, publicRoutes } from './Routes';
 import { Main } from './Layouts';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Login } from './Components';
+
+const storage = {
+    set(key, value) {
+        localStorage.setItem(key, JSON.stringify(value));
+    },
+    get(key) {
+        return JSON.parse(localStorage.getItem(key));
+    },
+};
 
 function App() {
+    const Layout = Main;
     return (
         <BrowserRouter>
-            <div className="App">
-                <Routes>
-                    {publicRoutes.map((route, index) => {
-                        const Page = route.component;
-                        const Layout = Main;
-                        return (
-                            <Route
-                                key={index}
-                                path={route.path}
-                                element={
-                                    <Layout>
-                                        <Page />
-                                    </Layout>
-                                }
-                            />
-                        );
-                    })}
-                </Routes>
-            </div>
+            <Routes>
+                {publicRoutes.map((route, index) => {
+                    const Page = route.component;
+                    return (
+                        <Route
+                            key={index}
+                            path={route.path}
+                            element={
+                                <Layout>
+                                    <Page />
+                                </Layout>
+                            }
+                        />
+                    );
+                })}
+            </Routes>
+            <Routes>
+                {privateRoutes.map((route, index) => {
+                    const Page = route.component;
+                    return (
+                        <Route
+                            key={index}
+                            path={route.path}
+                            element={<Layout>{storage.get('isLogin') ? <Page /> : <Login />}</Layout>}
+                        />
+                    );
+                })}
+            </Routes>
         </BrowserRouter>
     );
 }

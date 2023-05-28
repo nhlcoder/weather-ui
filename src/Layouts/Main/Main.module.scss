@@ -1,0 +1,26 @@
+.wrapper {
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+
+    grid-template-columns: var(--width-sidebar) max-content;
+}
+
+.main {
+    grid-column-start: 2;
+    grid-column-end: end;
+
+}
+
+
+.sidebar {
+    border-radius: 0px;
+    background-color: black;
+}
+
+.content {
+    margin-top: var(--margin-top-content);
+    display: flex;
+    justify-content: center;
+}
