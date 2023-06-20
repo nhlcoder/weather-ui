@@ -6,10 +6,10 @@ const publicRoutes = [
 ];
 
 const privateRoutes = [
-    { path: '/userlist', component: UserList},
-    { path: '/createuser', component: CreateUser},
-    { path: '/updateuser/:id', component: UpdateUser},
-    { path: '/userdetail/:id', component: UserDetail}
+    { path: '/userlist', component: UserList },
+    { path: '/createuser', component: CreateUser },
+    { path: '/updateuser/:id', component: UpdateUser },
+    { path: '/userdetail/:id', component: UserDetail },
 ];
 
 export { publicRoutes, privateRoutes };

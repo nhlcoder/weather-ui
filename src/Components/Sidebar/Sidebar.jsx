@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloud, faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faCloud, faHouse, faPlus, faUser } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 import images from '~/assets/images';
@@ -29,13 +29,13 @@ function Sidebar() {
                 </li>
                 <li className={style['sidebar-list-item']}>
                     <Link className={style['sidebar-list-item-link']} to="/userlist">
-                        <FontAwesomeIcon className={style['icon']} icon={faCloud} />
+                        <FontAwesomeIcon className={style['icon']} icon={faUser} />
                         <span className={style['title']}>List</span>
                     </Link>
                 </li>
                 <li className={style['sidebar-list-item']}>
                     <Link className={style['sidebar-list-item-link']} to="/createuser">
-                        <FontAwesomeIcon className={style['icon']} icon={faCloud} />
+                        <FontAwesomeIcon className={style['icon']} icon={faPlus} />
                         <span className={style['title']}>Create</span>
                     </Link>
                 </li>

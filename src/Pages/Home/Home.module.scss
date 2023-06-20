@@ -133,7 +133,7 @@
     left: 28px;
     width: 90px;
     height: 20px;
-    background: #fff;
+    background: #00fea9;
 }
 
 .cloud1 ul {
@@ -145,7 +145,7 @@
 .cloud1 ul li {
     width: 50px;
     height: 50px;
-    background: #fff;
+    background: #00fea9;
     float: left;
     border-radius: 360px;
 }
@@ -153,7 +153,7 @@
 .cloud1 ul li:nth-child(2) {
     width: 70px;
     height: 70px;
-    background: #fff;
+    background: #0022ff;
     float: left;
     border-radius: 360px;
     position: absolute;
@@ -164,7 +164,7 @@
 .cloud1 ul li:nth-child(3) {
     width: 60px;
     height: 60px;
-    background: #fff;
+    background: #f70000;
     float: left;
     border-radius: 360px;
     position: absolute;
@@ -175,7 +175,7 @@
 .cloud1 ul li:last-child {
     width: 50px;
     height: 50px;
-    background: #fff;
+    background: #ff0000;
     float: left;
     border-radius: 360px;
     position: absolute;
@@ -309,7 +309,7 @@
     bottom: 50px;
     left: 50px;
     margin-left: 20px;
-    background: #fff;
+    background: #ff0000;
     height: 40px;
     width: 10px;
     border-radius: 360px;
@@ -344,7 +344,7 @@
     position: absolute;
     bottom: -50px;
     width: 150px;
-    color: #fff;
+    color: #ff0000;
     font-family: 'Raleway Dots', cursive;
     font-weight: 100;
     font-size: 20px;
@@ -581,10 +581,10 @@
 
 @keyframes cloudi {
     0% {
-        background: #fff;
+        background: #00ff22;
     }
     56% {
-        background: #fff;
+        background: #40ff00;
     }
     57% {
         background: #92a4b6;
